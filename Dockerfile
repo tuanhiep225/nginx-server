@@ -12,4 +12,5 @@ COPY ./certs-configs/mifi.website/privkey.pem /etc/nginx/ssl/
 COPY ./certs-configs/skmei.ph/skmei_ph_chain.pem /etc/nginx/ssl/
 COPY ./certs-configs/skmei.ph/skmei_ph_fullchain.pem /etc/nginx/ssl/
 COPY ./certs-configs/skmei.ph/skmei_ph_privkey.pem /etc/nginx/ssl/
+COPY ./certs-configs/skmei.ph/skmei_ph_dhparam.pem /etc/nginx/ssl/
 CMD ["nginx", "-g", "daemon off;"]
